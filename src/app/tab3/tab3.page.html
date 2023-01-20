@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      <ion-row>أدعية مختارة من صحيح السنة</ion-row>
+      <ion-row>Authentic Sunnah Duas</ion-row>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" style="margin-top: 30px">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list *ngFor="let dua of duaData">
+    <ion-card>
+      <ion-card-content
+        class="ARText"
+        style="
+          justify-content: center;
+          background-color: rgb(209, 197, 176);
+          color: black;
+        "
+      >
+        <ion-row style="float: center">
+          <ion-fab-button size="small" color="information">
+            <span style="color: black; font-weight: 900"> {{ dua.DuaNo }}</span>
+          </ion-fab-button>
+        </ion-row>
+        {{ dua.ArabicText }}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
 </ion-content>

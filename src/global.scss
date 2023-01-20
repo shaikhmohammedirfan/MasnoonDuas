@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,92 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: "AmiriColor";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./assets/fonts/amiri-quran-colored.woff") format("woff");
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 4rem;
+  text-align: center;
+}
+
+ion-header {
+  padding-bottom: 10px;
+}
+
+.jumbotron {
+  margin-top: 1px;
+  font-size: 15px;
+
+  box-shadow: rgba(0, 0, 0, 0.75) 10px 10px 5px 0px;
+  background-color: rgb(124, 104, 103);
+}
+
+.jumbotronBlue {
+  background-image: linear-gradient(160deg, #000000 30%, #335063 74%);
+}
+
+.ARText {
+  font-family: "AmiriColor";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 2.2;
+
+  color: black;
+  direction: rtl;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.ToolbarHeading {
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 600px;
+  color: black;
+  justify-content: center;
+}
+
+.list-md {
+  margin-top: 10px;
+}
+
+ion-title {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  // For small screens
+
+  .ARText {
+    font-size: 22px;
+  }
+  .ToolbarHeading {
+    font-size: 16px;
+  }
+  img {
+    min-width: 90%;
+    min-height: 90%;
+  }
+
+  .flex-item {
+    padding: 1rem;
+  }
+}

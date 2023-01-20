@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MasnoonDuas</string>
+    <string name="title_activity_main">MasnoonDuas</string>
+    <string name="package_name">com.masnoonduas.app</string>
+    <string name="custom_url_scheme">com.masnoonduas.app</string>
+</resources>

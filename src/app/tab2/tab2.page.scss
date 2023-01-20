@@ -1,0 +1,12 @@
+ion-row {
+  justify-content: center;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 700px) {
+  // For small screens
+  ion-row {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
